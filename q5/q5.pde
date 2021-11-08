@@ -24,8 +24,8 @@ void animation(float radius, float step) {
 
   // atualiza x1 e y1, invertido sin e cos pois a bolinha
   // vermelha vai no sentido contrário ao movimento da ellipse
-  x1 = x1 + sin(position*4) * 75/2;
-  y1 = y1 + cos(position*4) * 75/2;
+  x1 = x1 + sin(position*3) * 50/2;
+  y1 = y1 + cos(position*3) * 50/2;
   fill(255, 0, 0);
 
   // cria um círculo de raio 5
