@@ -13,10 +13,7 @@ void setup(){
 }
 
 void draw(){
-  /*
-    Tirar o background pra mostrar q sempre colide no chão. 
-  */
-  background(255, 255, 255);
+  //background(255, 255, 255);
   fill(255, 0, 0);
   rect(0, 315, width, height);
   fill(0, 0, 255);
@@ -46,8 +43,6 @@ void draw(){
   }else if(x <= 0){
     vX = -vX;
   }
-  velocidadeAtual = sqrt((x*x) + 100);
-  alturaMax = ((velocidadeAtual*velocidadeAtual) * 0.5) / (2*0.5f);
   if(y >= 300){
     vY = -vY + 0.5f;
     y = 300;

@@ -2,7 +2,7 @@ float a = 0;//variavel responsavel por armazenar a angulatura da rotacao por fra
 float r = 100;//r eh reponsavel por conter a distancia entre o ponto a ser colocado e o centro 
 //100->coord em x do ponto inicial 
 
-float alpha ;
+float alpha;
 
 void setup() {
   size(800, 600);
