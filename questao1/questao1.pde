@@ -1,6 +1,5 @@
 float x, y;
 float vX, vY;
-float alturaMax, velocidadeAtual; 
 
 void setup(){
   size(800, 800);
@@ -8,12 +7,10 @@ void setup(){
   y = 300;
   vX = 5;
   vY = 10;
-  alturaMax = 0;
-  velocidadeAtual = 0;
 }
 
 void draw(){
-  //background(255, 255, 255);
+  background(255, 255, 255);
   fill(255, 0, 0);
   rect(0, 315, width, height);
   fill(0, 0, 255);
@@ -38,9 +35,9 @@ void draw(){
     Como a colisão é elástica, uma simples inversão de sinal funciona
     aqui. 
   */
-  if(x >= width){
+  if(x >= width-15){
     vX = -vX;
-  }else if(x <= 0){
+  }else if(x <= 0+15){
     vX = -vX;
   }
   if(y >= 300){
